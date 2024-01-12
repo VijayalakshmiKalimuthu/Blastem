@@ -1,0 +1,133 @@
+.login-h2 {
+  color: #81808c;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 4rem;
+}
+
+.form-card{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+.form-field{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-box{
+  background-color: #ccc;
+  height: 4rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  position: relative;
+  width: 40rem;
+}
+
+.input-box-icon{
+  font-size: 2rem;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+.login-form .login-label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2f2e41;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.9px;
+  align-self: flex-start;
+}
+
+.login-form .login-input {
+  outline: none;
+  border: none;
+  border: 1.5px solid rgb(255, 255, 255);
+  background-color: #ccc;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* z-index: 10; */
+
+  font-size: 1.3rem;
+  color: #2f2e41;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  transition: all 0.2s;
+  margin: 0;
+  
+}
+.login-form .login-input::-moz-placeholder {
+  font-size: 1.2rem;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+}
+.login-form .login-input::placeholder {
+  font-size: 1.2rem;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+}
+/* .login-form .login-input:focus {
+  border: 1.5px solid rgb(47, 47, 237);
+} */
+.login-form .login-button {
+  margin-top: 3rem;
+  outline: none;
+  border: none;
+  padding: 1.4rem 10rem;
+  border-radius: 9px;
+  background-color: #2f2e41;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: white;
+  transition: all 0.3s;
+}
+.login-form .login-button:hover {
+  background-color: #21212c;
+  cursor: pointer;
+}
+.login-form .links {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-self: normal;
+}
+.login-form .links p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  color: #2f2e41;
+  cursor: pointer;
+}
+.login-form .links p:hover {
+  color: #3c388f;
+}
+
+.login-button1 {
+  outline: none;
+  border: none;
+  height: 4.2rem;
+  width: 20rem;
+  border-radius: 9px;
+  background-color: #2f2e41;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: white;
+  transition: all 0.3s;
+}

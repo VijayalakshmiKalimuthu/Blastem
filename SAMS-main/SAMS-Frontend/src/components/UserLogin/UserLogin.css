@@ -1,0 +1,104 @@
+.clogin-h2 {
+  color: #81808c;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 2rem;
+}
+.clogin-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+.cform-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+.cform-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cinput-box-icon {
+  font-size: 2rem;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.clogin-form .clogin-label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2f2e41;
+  font-family: "Poppins", sans-serif;
+
+  letter-spacing: 0.9px;
+  align-self: flex-start;
+}
+.clogin-form .clogin-input {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1.2rem;
+  background-color: #ccc;
+  margin-bottom: 2rem;
+  height: 4.2rem;
+  padding-left: 1.5rem;
+  width: 43rem;
+  font-size: 1.3rem;
+  color: #2f2e41;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  border: 1.5px solid rgb(255, 255, 255);
+  transition: all 0.2s;
+}
+.clogin-form .clogin-input::-moz-placeholder {
+  font-size: 1.2rem;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+}
+.clogin-form .clogin-input::placeholder {
+  font-size: 1.2rem;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+}
+.clogin-form .clogin-input:focus {
+  border: 1.5px solid rgb(47, 47, 237);
+}
+.clogin-form .clogin-button {
+  margin-top: 2rem;
+  outline: none;
+  border: none;
+  padding: 1.4rem 10rem;
+  border-radius: 9px;
+  background-color: #2f2e41;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: white;
+  transition: all 0.3s;
+}
+.clogin-form .clogin-button:hover {
+  background-color: #21212c;
+  cursor: pointer;
+}
+.clogin-form .clinks {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-self: normal;
+}
+.clogin-form .clinks p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  color: #2f2e41;
+  cursor: pointer;
+}
+.clogin-form .clinks p:hover {
+  color: #3c388f;
+}

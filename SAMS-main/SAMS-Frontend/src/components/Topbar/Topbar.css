@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat&family=Neonderthaw&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.container {
+  display: flex;
+  background-color: #313136;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+.content img {
+  height: 60px;
+}
+.text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff9f9;
+  font-family: "Black Ops One", cursive !important;
+
+  font-size: 14px;
+}
+.text > p {
+  font-family: "Black Ops One", cursive !important;
+}

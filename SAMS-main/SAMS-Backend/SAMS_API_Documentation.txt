@@ -1,0 +1,203 @@
+1. Login  :
+	Request type: POST
+	API Endpoint: http://127.0.0.1:8000/login
+    
+    Description :
+        This endpoint is to login an existing user.
+
+	Request BODY:
+		{
+			"username" : "01nigun",
+			"password" : "Nigun@123"
+		}
+
+	Response BODY:
+		Type - 1: [If Login Successful]
+			{
+				'success': True,
+				'message': 'Login Successful'
+			}
+
+        Type - 2: [If password is wrong]
+            {
+                'success': False,
+                'message': 'Incorrect Password'
+            }
+        
+        Type - 3: [If username doesn't exist]
+            {
+                'success': False,
+                'message': 'User Not Found!!'
+            }
+        
+        Error :
+            {
+                'success': False,
+                'message': err
+            }
+
+2. Register  :
+	Request type: POST
+	API Endpoint: http://127.0.0.1:8000/register
+    
+    Description : 
+        This endpoint is to register a new user.
+
+	Request BODY:
+		{
+			"username" : "01nigun",
+			"password" : "Nigun@123",
+            "email" : "20cs109@kpriet.ac.in"
+		}
+
+	Response BODY:
+		Type - 1: [If Registration Successful]
+			{
+				'success': True,
+				'message': 'User Created Successfully'
+			}
+
+        Type - 2: [If username already in db]
+            {
+                'success': False,
+                'message': 'Username Already Exists'
+            }
+        
+        Type - 3: [If email ID already in db]
+            {
+                'success': False,
+                'message': 'Email Already Exists'
+            }
+        
+        Error :
+            {
+                'success': False,
+                'message': err
+            }
+
+3. Verify Credential :
+	Request type: POST
+	API Endpoint: http://127.0.0.1:8000/verify_credential
+    
+    Description : 
+        This endpoint is to verify the credentials such as 
+        username and mail id when the user types in the input!!
+
+	Request BODY:
+		{
+            "type" : "email" / "username",
+            "credential" : "20cs109@kpriet.ac.in" (or) "01nigun"
+        }
+
+	Response BODY:
+		Type - 1: [If Username Available]
+			{
+                'success': True,
+                'message': 'Username Available!!'
+            }
+
+        Type - 2: [If email ID available]
+            {
+                'success': True,
+                'message': 'Mail ID Available!!'
+            }
+        
+        Type - 3: [If Username Alredy exists]
+            {
+                'success': False,
+                'message': 'Username Already Exists!!'
+            }
+        
+        Type - 4: [If email ID already exists]
+            {
+                'success': True,
+                'message': 'Mail ID Already Connected!!'
+            }
+        
+        Type - 5: [Invalid Credential Type]
+            {
+                'success': False,
+                'message': 'Invalid Credential Type!!'
+            }
+        
+        Error :
+            {
+                'success': False,
+                'message': err
+            }
+
+4. Send OTP  :
+	Request type: POST
+	API Endpoint: http://127.0.0.1:8000/send_otp
+    
+    Description : 
+        This endpoint is to send OTP to user mail during 1st time verification 
+        and during password reset.
+
+	Request BODY:
+		{
+            "action" : "verify" / "retrieve",
+            "email" : "20cs126@kpriet.ac.in"
+        }
+
+	Response BODY:
+		Type - 1: [During Verification]
+			{
+                'success': True,
+                'message' : 'OTP Sent Successfully!!'
+                'otp': otp
+            }
+
+        Type - 2: [Trying to reset password and Mail ID exists!!]
+            {
+                'success': True,
+                'message' : 'OTP Sent Successfully!!'
+                'otp': otp
+            }
+        
+        Type - 3: [Trying to reset password and Mail ID doesn't exists!!]
+            {
+                'success': False,
+                'message': 'Mail ID Not Found!!'
+                'otp': None
+            }
+        
+        Error :
+            {
+                'success': False,
+                'message': err
+            }
+
+5. Reset Password:
+	Request type: POST
+	API Endpoint: http://127.0.0.1:8000/reset_password
+    
+    Description : 
+        This endpoint is to allow the user to reset the password.
+
+	Request BODY:
+		{
+            "email" : "01kumaragupta@gmail.com",
+            "new_password" : "Kumaran@123"
+        }
+
+	Response BODY:
+		Type - 1: [If Email ID exists]
+			{
+                'success': True,
+                'message': 'Password Changed Successfully!!',
+            }
+
+        Type - 2: [If Email ID doesn't exists]
+            {
+                'success': False,
+                'message': 'Mail ID Not Registered!!'
+            }
+        
+        Error :
+            {
+                'success': False,
+                'message': 'Error Changing Password!!',
+            }
+
+

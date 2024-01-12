@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat&family=Neonderthaw&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.css-ahj2mt-MuiTypography-root {
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1px;
+  width: fit-content;
+}
+
+.top-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: fit-content;
+  z-index: 1000;
+  border-bottom: 2px solid white;
+  font-family: "Black Ops One", cursive;
+}
+
+.main-content .top {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  border-bottom: 2px solid #bdbaba;
+}
+
+.main-content .top .page-title {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: "Inter";
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.dashboard-page {
+  height: 100%;
+  /* width: 100%; */
+  display: flex;
+  margin-left: 25rem;
+  flex-direction: column;
+  background-color: #313136;
+  overflow-y: scroll;
+  /* position: relative; */
+  /* overflow-y: hidden; */
+}
+
+.dashboard-page::-webkit-scrollbar {
+  display: none;
+}
+
+.dashboard-main {
+  display: flex;
+  margin-top: 8rem;
+  /* height: fit-content;
+  justify-content: flex-end; */
+  /* margin-left: 25rem; */
+}
+
+.main-content {
+  /* flex: 1; */
+  height: max-content;
+  background-color: #313136;
+  width: 100%;
+}
+
+.rem-content {
+  /* height: 100vh; */
+  /* overflow-y: scroll; */
+}
+
+.dummy-sidebar {
+  height: 100px;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.side-nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 500;
+  padding-top: 7rem;
+  overflow: hidden;
+  /* height: 100%; */
+  /* width: 25rem; */
+}

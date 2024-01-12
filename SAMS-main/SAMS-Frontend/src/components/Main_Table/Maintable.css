@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.section-page {
+  background-color: #313136;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-page .top {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  border-bottom: 2px solid #bdbaba;
+}
+
+.section-page .top .page-title {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: "Inter";
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.section-page .section-content {
+  height: 100%;
+  width: 100%;
+  /* background-color: #BDBABA; */
+  display: flex;
+  flex-direction: column;
+}
+
+.section-page .section-content .content-top {
+  height: fit-content;
+  padding: 10px 30px;
+  width: 100%;
+  /* background-color: white; */
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content-top-left {
+  flex: 1;
+  /* background-color: lightblue; */
+}
+
+.content-top-left .search-bar {
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  width: 30rem;
+  padding: 10px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.content-top-left .search-bar input {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  bottom: 0;
+  right: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0 0rem 0 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #313136;
+}
+
+.content-top-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content-top-right .action-btn {
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: fit-content;
+  transition: all 0.15s ease;
+  font-family: "Poppins";
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.action-btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.content-top-right .action-btn:hover {
+  opacity: 0.85;
+}
+
+.content-top-right .action-btn:active {
+  transform: scale(0.95);
+}
+
+.section-content .content-table {
+  flex: 1;
+  width: 100%;
+  /* background-color: white; */
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  /* justify-content: center; */
+}
+
+.table-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+table {
+  width: 95%;
+  /* border-collapse: collapse; */
+  border-spacing: 0;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 15px 0;
+  border: 1px solid #bdbaba;
+  border-collapse: collapse;
+  border: none;
+}
+
+.table-head {
+  font-family: "Poppins";
+  font-size: 1.3rem;
+  background-color: #443c68;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+td {
+  font-family: "Nunito";
+  font-size: 1.3rem;
+  background-color: #5e6268;
+  color: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #bdbaba;
+}
+
+td span {
+  font-size: 2rem;
+}
+
+.view-btn,
+.delete-btn,
+.edit-btn {
+  color: #ccc;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  /* background-color: #ccc; */
+  border-radius: 5px;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view-btn:hover,
+.delete-btn:hover,
+.edit-btn:hover {
+  color: #2d2c33;
+}

@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Inter:wght@600&family=Montserrat&family=Neonderthaw&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainbox {
+  width: 925px;
+  height: max-content;
+  border-radius: 5px;
+  background-color: #474e68;
+  margin: 0 auto;
+  z-index: 1001;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  padding-bottom: 10px;
+}
+
+.top-title {
+  border-bottom: 2px solid #bdbaba;
+  margin-bottom: 20px;
+}
+.title {
+  color: white;
+  font-family: "Inter";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 2.9px;
+  padding: 20px 10px 0 0;
+  margin-left: 20px;
+  padding-bottom: 5px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.mainflex {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+  gap: 2rem;
+}
+.field-flex {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Nunito" !important;
+  font-size: 1.4rem;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.device-input-field {
+  width: 270px;
+  border-radius: 5px;
+  border: 1px solid rgba(58, 142, 255, 0);
+  padding: 10px 20px;
+  font-family: "Poppins";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1px;
+  outline: none;
+  transition: 0.15s ease;
+  border: 2px solid #474e68;
+  background-color: #ddd;
+}
+
+.error-input{
+  border: 2px solid #ef233bb9;
+  border-radius: 5px;
+}
+
+
+.correct-input:focus{
+  border: 2px solid #3a8eff;
+  outline: none;
+}
+
+
+
+::placeholder {
+  font-family: "Poppins";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+.popup-btn {
+  border-radius: 10px;
+  background-color: #635985;
+  color: #fff;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 1.3rem;
+  padding: 8px 15px;
+  font-style: normal;
+  line-height: normal;
+  cursor: pointer;
+  transition: 0.15s ease;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.popup-btn:hover {
+  opacity: 0.9;
+}
+
+.popup-action-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.error-txt{
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  right: 6px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  font-size: .95rem;
+  font-family: 'Inter';
+  transition: .2s ease;
+  overflow: hidden;
+}
+
+.closed-error-txt{
+  width: 0px;
+  background-color: #ddd;
+  padding: 0px;
+}
+
+.open-error-txt{
+  width: max-content;
+  background-color: #ef233bd6;
+  color: #ddd;
+  padding: 0px 5px;
+  padding-right: 2.2rem;
+}
+
+.error-icon{
+  color: #ef233bd6;
+  position: absolute;
+  top: 0;
+  right: 6px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  cursor: pointer;
+  z-index: 50;
+  transition: .2s ease;
+}
+
+.field{
+  position: relative;  
+}
